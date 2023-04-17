@@ -1,0 +1,129 @@
+
+html,
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos CSS para a calculadora */
+.calculator {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #8cbaba;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    display: flex; /* Aplica um layout flex para criar uma grade */
+    flex-wrap: wrap; /* Permite que os itens da grade quebrem para a próxima linha quando não há espaço suficiente */
+}
+
+.calculator table {
+    width: 100%;
+    table-layout: fixed; /* Define a largura da tabela como fixa para que todas as células tenham o mesmo tamanho */
+}
+
+.calculator td {
+    flex-basis: (50%-50px); /* Define a largura das células para 25% do espaço disponível */
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box; /* Mantém o tamanho total das células, incluindo o preenchimento */
+    border-radius: 50%; /* Define o raio de borda para 50% para criar botões redondos */
+
+}
+
+
+.calculator button {
+    width: 100%;
+    height: 60px; /* Ajuste a altura conforme necessário */
+    border-radius: 50px; /* Torna os botões redondos */
+    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+    background-color: #ddd; /* Cor de fundo padrão */
+    transition: background-color 0.2s ease; /* Adiciona uma transição suave para a mudança de cor de fundo */
+}
+
+.calculator button:hover {
+    background-color: #38b3cf; /* Muda a cor de fundo quando o botão é passado o mouse */
+}
+
+.calculator button:active {
+    background-color: #2ab1bb; /* Muda a cor de fundo quando o botão é clicado */
+}
+
+.calculator input {
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: right; /* Alinha o texto à direita */
+    background-color: #2c548a;
+    border: none; /* Remove a borda */
+    border-radius: 50%; /* Torna a área de resultado redonda */
+    padding: 10px;
+    box-sizing: border-box; /* Mantém o tamanho total da área de resultado, incluindo o preenchimento */
+    color: #ffffff; /* Define a cor do texto como branco */
+
+}
+.result-box {
+    /* Estilo para a caixa de resultado */
+    width: 100%; /* Largura de 100% para ocupar todo o espaço disponível */
+    height: 50px; /* Altura de 50px */
+    background-color: #f0f0f0; /* Cor de fundo */
+    border-radius: 25px; /* Borda arredondada */
+    text-align: right; /* Alinhamento de texto à direita */
+    padding: 10px; /* Espaçamento interno */
+    font-size: 24px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte em negrito */
+    color: #000000; /* Define a cor do texto como preto */
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 6px;
+}
+.footer /* Estilos para os botões */
+.button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Estilos para o botão de Fundo Preto */
+.bg-black {
+  background-color: black;
+  color: white;
+}
+
+/* Estilos para o botão de Fundo Azul */
+.bg-blue {
+  background-color: blue;
+  color: white;
+}
+
+/* Estilos para o botão de Fundo Verde */
+.bg-green {
+  background-color: green;
+  color: white;
+}
+
+/* Estilos para o formato de gota colorido */
+.button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -20px; /* Ajuste a altura da gota aqui */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent; /* Ajuste o tamanho da gota aqui */
+  border-right: 10px solid transparent; /* Ajuste o tamanho da gota aqui */
+  border-bottom: 20px solid; /* Ajuste o tamanho da gota aqui */
+}
+
+

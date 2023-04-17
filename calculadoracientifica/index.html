@@ -1,0 +1,74 @@
+<!DOCTYPE lang="pt-br">
+<html>
+
+<head>
+    <meta charset="UFT-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="" width=device-width, initial-scale="1.0">
+    <title>Calculadora Científica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div id="result" class="result-box"></div>
+        <table>
+            <tr>
+                <td><button onclick="clearScreen()">AC</button></td>
+                <td><button onclick="toggleRadDeg()">Rad/Deg</button></td>
+                <td><button onclick="toggleInverse()">Inv</button></td>
+                <td><button onclick="appendCharacter('(')">(</button></td>
+                <td><button onclick="appendCharacter(')')">)</button></td>
+                <td><button onclick="appendCharacter('%')">%</button></td>
+                <td><button onclick="appendCharacter('!')">x!</button></td>
+                <td><button onclick="appendCharacter('sqrt(')">√</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendCharacter('7')">7</button></td>
+                <td><button onclick="appendCharacter('8')">8</button></td>
+                <td><button onclick="appendCharacter('9')">9</button></td>
+                <td><button onclick="appendCharacter('/')">÷</button></td>
+                <td><button onclick="appendCharacter('pi')">π</button></td>
+                <td><button onclick="appendCharacter('exp(')">EXP</button></td>
+                <td><button onclick="appendCharacter('^')">^</button></td>
+                <td><button onclick="appendCharacter('log(')">log</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendCharacter('4')">4</button></td>
+                <td><button onclick="appendCharacter('5')">5</button></td>
+                <td><button onclick="appendCharacter('6')">6</button></td>
+                <td><button onclick="appendCharacter('*')">*</button></td>
+                <td><button onclick="appendCharacter('e')">e</button></td>
+                <td><button onclick="appendCharacter('asin(')">sin<sup>-1</sup></button></td>
+                <td><button onclick="appendCharacter('acos(')">cos<sup>-1</sup></button></td>
+                <td><button onclick="appendCharacter('atan(')">tan<sup>-1</sup></button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendCharacter('1')">1</button></td>
+                <td><button onclick="appendCharacter('2')">2</button></td>
+                <td><button onclick="appendCharacter('3')">3</button></td>
+                <td><button onclick="appendCharacter('-')">-</button></td>
+                <td><button onclick="appendCharacter('ans')">ans</button></td>
+                <td><button onclick="appendCharacter('sin(')">sin</button></td>
+                <td><button onclick="appendCharacter('cos(')">cos</button></td>
+                <td><button onclick="appendCharacter('tan(')">tan</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="appendCharacter('0')">0</button></td>
+                <td><button onclick="appendCharacter('.')">.</button></td>
+                <td><button onclick="appendCharacter('+')">+</button></td>
+                <td colspan="2"><button onclick="appendCharacter('ans')">ans</button></td>
+                <td><button onclick="appendCharacter('log10(')">log<sub>10</sub></button></td>
+                <td><button onclick="appendCharacter('exp(')">exp</button></td>
+                <td><button onclick="calculate()">=</button></td>
+            </tr>
+        </table>
+    </div>
+    <footer class="footer">
+        <button class="bg-black" onclick="changeBackground('black')">Fundo Preto</button>
+        <button class="bg-blue" onclick="changeBackground('blue')">Fundo Azul</button>
+        <button class="bg-green" onclick="changeBackground('green')">Fundo Verde</button>
+    </footer>
+</body>
+<script type='text/javascript' src="script.js"></script>
+
+</html>
