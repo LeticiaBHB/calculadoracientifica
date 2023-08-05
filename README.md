@@ -2,10 +2,11 @@
 ## Overview
 the project is a scientific calculator, with all its functionalities.
 
-| Website Image || Website Image || Website Image || Website Image |
-|----------||----------||----------||----------|
-| ![App Screenshot](screenshot/1.jpeg) | ![App Screenshot](screenshot/2.jpeg) | ![App Screenshot](screenshot/3.jpeg)  
-| ![App Screenshot](screenshot/4.jpeg)  
+## ScreenShots
+
+| Image 1 | Image 2 | Image 3 | Image 4 | 
+|----------|----------|----------|----------|
+| ![App Screenshot](calculadoracientifica/screenshot/1.jpeg) | ![App Screenshot](calculadoracientifica/screenshot/2.jpeg) | ![App Screenshot](calculadoracientifica/screenshot/3.jpeg) |![App Screenshot](calculadoracientifica/screenshot/4.jpeg) |
 
 ## License
 
